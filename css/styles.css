@@ -1,0 +1,60 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.row{
+    float: left;
+    width: 100%;
+}
+.mb{
+    margin-bottom: 30px;
+}
+.mr{
+    margin-right: 2%;
+}
+
+.demo{
+    background-color: antiquewhite;
+    min-height: 100px;
+}
+.header{
+    background-color: aquamarine;
+    border:1px red solid ;
+    font-size: 1vw;
+    color:blue;
+    border-radius: 5px;
+
+}
+.header h1{
+    margin: 10px 20px;
+
+}
+
+.menu{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+
+}
+.boxphai{
+    float: left;
+    width: 24%;
+}
+.boxtrai{
+    float: left;
+    width: 74%;
+}
+.footer{
+    background-color: aquamarine;
+    border:1px red solid ;
+    font-size: 1vw;
+    color:blue;
+    border-radius: 5px;
+    padding: 20px;
+
+}
