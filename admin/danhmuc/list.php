@@ -7,8 +7,8 @@
                     <table>
                         <tr>
                             <th></th>
-                            <th>Ma loai</th>
-                            <th>Ten loai</th>
+                            <th>MÃ LOẠI</th>
+                            <th>TÊN LOẠI</th>
                             <th></th>
                         </tr>
                         <?php
@@ -29,8 +29,8 @@
                 </div>
                 
                 <div class="row mb10">
-                    <input type="submit" value="Them moi">
-                    <input type="reset" value="Nhap lai">
+                <input type="submit" value="Chọn tất cả">
+                <input type="reset" value="Bỏ chọn tất cả">
                     <a href="index.php?act=adddm"><input type="button" value="Nhap them"></a>
                 </div>
             </div>

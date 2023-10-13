@@ -21,11 +21,11 @@
                     <table>
                         <tr>
                             <th></th>
-                            <th>Ma loai</th>
-                            <th>Ten san pham</th>
-                            <th>Gia</th>
-                            <th>Hinh</th>
-                            <th>Luot xem</th>
+                            <th>MÃ LOẠI</th>
+                            <th>TÊN SẢN PHẨM</th>
+                            <th>GÁI</th>
+                            <th>HÌNH</th>
+                            <th>LƯỢT XEM</th>
                             <th></th>
                         </tr>
                         <?php
@@ -55,9 +55,9 @@
                 </div>
                 
                 <div class="row mb10">
-                    <input type="submit" value="Them moi">
-                    <input type="reset" value="Nhap lai">
-                    <a href="index.php?act=addsp"><input type="button" value="Nhap them"></a>
+                <input type="submit" value="Chọn tất cả">
+                    <input type="reset" value="Bỏ chọn tất cả">
+                    <a href="index.php?act=addsp"><input type="button" value="Nhập thêm"></a>
                 </div>
             </div>
         </div>

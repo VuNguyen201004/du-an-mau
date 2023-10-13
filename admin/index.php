@@ -2,6 +2,7 @@
 include "../model/pdo.php";
 include "../model/danhmuc.php";
 include "../model/sanpham.php";
+include "../model/taikhoan.php";
 include "header.php"; // Kiểm tra xem có file header.php không
 
 if(isset($_GET['act'])){
@@ -61,7 +62,6 @@ if(isset($_GET['act'])){
                 }else{
 
                 }
-
                 insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm);
                 $thongbao = "Thêm thành công";
             }
@@ -111,14 +111,21 @@ if(isset($_GET['act'])){
             }else{
 
             }
-            // update_sanpham($iddm,$id,$tensp,$giasp,$mota,$hinh);
-            //     $thongbao = "Cap nhat thành công";
-            }         
+            update_sanpham($iddm,$id,$tensp,$giasp,$mota,$hinh);
+                $thongbao = "Cap nhat thành công";
+            }
+            $listsanpham=loadall_sanpham();
             include "sanpham/add.php";
             break;
 
             default:
             include "home.php";
+            break;
+
+            // Khách hàng 
+        case 'dskh';
+            $listtaikhoan=loadall_taikhoan();
+            include "taikhoan/list.php";
             break;
     }
 } else {

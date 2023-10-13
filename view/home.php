@@ -43,6 +43,7 @@
                         $i=0;
                         foreach($spnew as $sp){
                             extract($sp);
+                            $linksp="index.php?act=sanphamct&idsp=".$id;
                             $hinh=$img_path.$hinh;
                             if(($i==2)||($i==5)||($i==8)){
                                 $mr="mr";
@@ -50,10 +51,11 @@
                                 $mr="";
                             }
                             echo '<div class="boxsanpham '.$mr.'">
-                            <div class="row img"><img src="'.$hinh.'" alt=""></div>
-                            <p>'.$gia.'</p>
-                            <a href="">'.$name.'</a>
+                                <div class="row img"><a href="'.$linksp.'"><img src="'.$hinh.'" alt=""></a></div>
+                                <p>'.$gia.'</p>
+                                <a href="'.$linksp.'">'.$name.'</a>
                         </div>';
+                        $i+=1;
                         }
                         ?>
                         <!-- <div class="boxsanpham mr">

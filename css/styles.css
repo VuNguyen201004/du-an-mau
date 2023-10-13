@@ -154,6 +154,7 @@
 .formtaikhoan input[type="submit"],
 .formcontent input[type="submit"],
 .formcontent input[type="reset"],
+.formtaikhoan input[type="reset"],
 .formcontent input[type="button"] {
     border-radius: 5px;
     padding:5px 10px;
@@ -344,4 +345,10 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+.spct{
+    text-align: center;
+}
+.thongbao{
+    color:red;
 }

@@ -18,26 +18,26 @@
                             </select>
                         </div>
                         <div class="row mb10">
-                            Ten san pham : <br>
+                            TÊN SẢN PHẨM : <br>
                             <input type="text" name="tensp">
                         </div>
                         <div class="row mb10">
-                            Gia : <br>
+                            GIÁ : <br>
                             <input type="text" name="giasp">
                         </div>
                         <div class="row mb10">
-                            Hinh : <br>
+                            HÌNH ẢNH : <br>
                             <input type="file" name="hinh" id="">
                         </div>
                         <div class="row mb10">
-                            Mo ta : <br>
+                            MÔ TẢ : <br>
                             <textarea name="mota" id="" cols="30" rows="10"></textarea>
                         </div>
                         
                         <div class="row mb10">
-                            <input type="submit" name="themmoi" value="Them moi" >
-                            <input type="reset" value="Nhap lai">
-                            <a href="index.php?act=listsp"><input type="button" value="Danh sach"></a>
+                            <input type="submit" name="themmoi" value="Thêm mới" >
+                            <input type="reset" value="Nhập lại">
+                            <a href="index.php?act=listsp"><input type="button" value="Danh sách"></a>
                         </div>
                         <?php
                         if(isset($thongbao)&&($thongbao)!="") echo $thongbao;

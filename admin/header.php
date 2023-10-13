@@ -13,11 +13,11 @@
         </div>
         <div class="row mb menu">
             <ul>
-                <li><a href="index.php">Trang chu</a></li>
-                <li><a href="index.php?act=adddm">Danh muc</a></li>
-                <li><a href="index.php?act=addsp">Hang hoa</a></li>
-                <li><a href="index.php?act=addkh">Khach hang</a></li>
-                <li><a href="index.php?act=addbl">Binh luan</a></li>
-                <li><a href="index.php?act=thongke">thong ke</a></li>
+                <li><a href="index.php">TRANG CHỦ</a></li>
+                <li><a href="index.php?act=adddm">DANH MỤC</a></li>
+                <li><a href="index.php?act=addsp">HÀNG HÓA</a></li>
+                <li><a href="index.php?act=dskh">KHÁCH HÀNG</a></li>
+                <li><a href="index.php?act=addbl">BÌNH LUẬN</a></li>
+                <li><a href="index.php?act=thongke">THỐNG KÊ</a></li>
             </ul>
         </div>
