@@ -11,6 +11,7 @@
                                     
                                 </div>
                             <div class="row mb10">
+                            <li><a href="index.php?act=donhang">Dơn hàng của tôi</a></li>
                             <li><a href="index.php?act=quenmk">Quên mật khẩu</a></li>
                             <li><a href="index.php?act=edit_taikhoan">Cập nhật tài khoản</a></li>
                             <?php if($role==1){ ?>

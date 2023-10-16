@@ -17,7 +17,7 @@
                 <li><a href="index.php?act=adddm">DANH MỤC</a></li>
                 <li><a href="index.php?act=addsp">HÀNG HÓA</a></li>
                 <li><a href="index.php?act=dskh">KHÁCH HÀNG</a></li>
-                <li><a href="index.php?act=addbl">BÌNH LUẬN</a></li>
+                <li><a href="index.php?act=dsbl">BÌNH LUẬN</a></li>
                 <li><a href="index.php?act=thongke">THỐNG KÊ</a></li>
             </ul>
         </div>

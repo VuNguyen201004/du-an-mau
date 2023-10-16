@@ -1,5 +1,5 @@
 <div class="row mb mb">
-                <div class="boxtrai mr demo">
+            <div class="boxtrai mr demo">
                 <div class="row mb">
                     <?php
                         extract($onesp);
@@ -14,24 +14,28 @@
                             ?>
                     </div>
                 </div>
-                <div class="row mb">
-                <div class="boxtitle">Binh Luan</div>
-                    <div class="row boxcontent">
-                                            
-                    </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function(){
+                        $("#binhluan").load("view/binhluan/binhluanform.php",{idpro :<?=$id?>});
+                    });
+</script>
+                <div class="row" id="binhluan">
+                
                 </div>
+                
                 <div class="row mb">
-                <div class="boxtitle">San Pham cung loai</div>
-                    <div class="row boxcontent">
-                        <?php
-                        foreach($sp_cung_loai as $sp_cung_loai ){
-                            extract($sp_cung_loai);
-                            $linksp="index.php?act=sanphamct&idsp=".$id;
-                            echo '<li><a href=""'.$linksp.'">'.$name.'</a><li>';
-                        }
-                        ?>
+                    <div class="boxtitle">San Pham cung loai</div>
+                        <div class="row boxcontent">
+                            <?php
+                            foreach($sp_cung_loai as $sp_cung_loai ){
+                                extract($sp_cung_loai);
+                                $linksp="index.php?act=sanphamct&idsp=".$id;
+                                echo '<li><a href=""'.$linksp.'">'.$name.'</a><li>';
+                            }
+                            ?>
+                        </div>
                     </div>
-                </div>
                 </div>
             <div class="boxphai">
                 <?php include"boxright.php"; ?>
