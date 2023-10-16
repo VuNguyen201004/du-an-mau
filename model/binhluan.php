@@ -11,6 +11,11 @@ function loadall_binhluan($idpro){
     $listbl=pdo_query($sql);
     return $listbl;
 }
+function loadall_binhluan2(){
+    $sql = "SELECT * FROM binhluan order by id desc";
+    $listbinhluan=pdo_query($sql);
+    return $listbinhluan;
+}
 function delete_binhluan($id){
     $sql="DELETE FROM binhluan where id=".$id;
     pdo_execute($sql);

@@ -98,25 +98,21 @@ if(isset($_GET['act'])){
             include "sanpham/update.php";
             break;
         case 'updatesp';
-        if(isset($_POST['capnhat']) && ($_POST['capnhat'])){
+        if(isset($_POST['capnhat']) && ($_POST['capnhat'])) {
             $id = $_POST['id'];
             $tensp = $_POST['tensp'];
             $giasp = $_POST['giasp'];
             $mota = $_POST['mota'];
             $iddm = $_POST['iddm'];
-            $hinh=$_FILES['hinh']['name'];
-            $target_dir = "../upload/";
-            $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
-            if(move_uploaded_file($_FILES["hinh"]["tmp_name"],$target_file)){
-                // echo "file". htmlspecialchars(basename($_FILES['name']))
-            }else{
-
-            }
-            update_sanpham($iddm,$id,$tensp,$giasp,$mota,$hinh);
-                $thongbao = "Cap nhat thành công";
-            }
-            $listsanpham=loadall_sanpham();
-            include "sanpham/add.php";
+            $hinh = $_FILES['hinh']['name'];
+    
+            update_sanpham($iddm, $id, $tensp, $giasp, $mota, $hinh);
+            $thongbao = "Cập nhật thành công";
+        }
+            $kyw = '';
+            $listdanhmuc = loadall();
+            $listsanpham = loadall_sanpham($kyw, $iddm);
+            include "sanpham/list.php";
             break;
             // Khách hàng 
         case 'dskh';
@@ -129,9 +125,10 @@ if(isset($_GET['act'])){
             break;
         case 'xoabl':
             if(isset($_GET['id'])&&($_GET['id']>0)){
+            // $id=$_GET['id'];
             delete_binhluan($_GET['id']);
             }
-            $listbinhluan=loadall_binhluan($id);
+            $listbinhluan=loadall_binhluan();
             include "binhluan/list.php";
             break;
         default:
