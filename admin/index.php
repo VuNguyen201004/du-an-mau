@@ -4,6 +4,7 @@ include "../model/danhmuc.php";
 include "../model/sanpham.php";
 include "../model/taikhoan.php";
 include "../model/binhluan.php";
+include "../model/thongke.php";
 include "header.php"; // Kiểm tra xem có file header.php không
 
 if(isset($_GET['act'])){
@@ -130,6 +131,14 @@ if(isset($_GET['act'])){
             }
             $listbinhluan=loadall_binhluan();
             include "binhluan/list.php";
+            break;
+        case 'thongke';
+            $listthongke = loadall_thongke();
+            include "thongke/list.php";
+            break;
+        case 'bieudo';
+            $listthongke = loadall_thongke();
+            include "thongke/bieudo.php";
             break;
         default:
             include "home.php";

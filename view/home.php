@@ -54,6 +54,13 @@
                                 <div class="row img"><a href="'.$linksp.'"><img src="'.$hinh.'" alt=""></a></div>
                                 <p>'.$gia.'</p>
                                 <a href="'.$linksp.'">'.$name.'</a>
+                                <form action="index.php?act=addtocart" method="post">
+                                <input type="hidden" name="id" value="'.$id.'">
+                                <input type="hidden" name="name" value="'.$name.'">
+                                <input type="hidden" name="hinh" value="'.$hinh.'">
+                                <input type="hidden" name="gia" value="'.$gia.'">
+                                <input type="submit" name="addtocart" value="THÊM VÀO GIỎ HÀNG">
+                                </form>
                         </div>';
                         $i+=1;
                         }

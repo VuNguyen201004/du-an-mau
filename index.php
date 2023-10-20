@@ -7,6 +7,9 @@
     include "model/taikhoan.php";
     include "global.php";
 
+
+    if(!isset($_SESSION['mycart'])) $_SESSION['mycart']=[];
+
     $spnew = loadall_sanpham_home();
     $dsdm = loadall();
     $dstop10 = loadall_sanpham_top10();
@@ -97,6 +100,20 @@
             case 'thoat':
                 session_unset();
                 header('location:index.php');
+                break;
+            case 'addtocart':
+                if(isset($_POST['addtocart'])&&($_POST['addtocart'])){
+                    $id=$_POST['id'];
+                    $name=$_POST['name'];
+                    $hinh=$_POST['hinh'];
+                    $gia=$_POST['gia'];
+                    $soluong=1;
+                    $ttien=$soluong*$gia;
+                    $spadd=[$id,$name,$hinh,$gia,$soluong,$ttien];
+                    array_push($_SESSION['mycart'],$spadd);
+                }
+            
+                include "view/cart/viewcart.php";
                 break;
             case 'gioithieu':
                 
